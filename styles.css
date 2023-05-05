@@ -1,0 +1,236 @@
+html,
+img,
+#header-container,
+#top-left,
+#top-right,
+#bigpicture-container,
+h3,
+h4,
+a,
+#figures,
+#figure1,
+#figure2,
+#figure3,
+#figure4,
+#figure5,
+#box1,
+#box2,
+#box3,
+footer,
+h5,
+h6 {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+#top-left {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0 9px 10px;
+}
+
+#top-left img {
+    height: 50px;
+}
+
+#top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#top-right a {
+    text-decoration: underline;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#bigpicture-container {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*qpi7rp*_ga*ODAyMDY2NDA2MC4xNjgyMzY3NzAz*_ga_3LRZM6TM9L*MTY4Mjk4NzAzNy45LjEuMTY4Mjk4NzA0NS41Mi4wLjA.");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 69px;
+    width: 1200px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#our-mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: black;
+    opacity: 1;
+    width: 100%;
+}
+
+#our-mission h2,
+#our-mission h4,
+#teatext h2,
+#teatext h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teaofthemonth {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin-bottom: 10px;
+}
+
+#teatext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: auto;
+}
+
+#figures {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    flex: 2 1 auto;
+    margin: auto;
+}
+
+#figure1,
+#figure2,
+#figure3,
+#figure4,
+#figure5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#figure1 img,
+#figure2 img,
+#figure3 img,
+#figure4 img,
+#figure5 img {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+#figure1 figcaption,
+#figure2 figcaption,
+#figure3 figcaption,
+#figure4 figcaption,
+#figure5 figcaption {
+    margin: 10px auto;
+}
+
+#locations {
+    display: grid;
+    height: 500px;
+    width: 1200px;
+    box-sizing: border-box;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 15px 350px;
+    grid-gap: 15px 40px;
+    justify-content: center;
+    align-content: center;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*lw4n5q*_ga*ODAyMDY2NDA2MC4xNjgyMzY3NzAz*_ga_3LRZM6TM9L*MTY4MzE2NTgyMS4xNC4wLjE2ODMxNjU4MjEuNjAuMC4w");
+    margin: 50px auto;
+    z-index: -1;
+}
+
+#locations-header {
+    display: grid;
+    justify-self: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-gap: 15px;
+    align-items: center;
+}
+
+#locations-header h2 {
+    display: grid;
+    justify-items: center;
+    grid-row-start: 1;
+    grid-row-gap: 15px;
+    grid-column-start: 2;
+    align-items: center;
+}
+
+#box1,
+#box2,
+#box3 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-row-start: 2;
+    grid-column-gap: 40px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    opacity: 1;
+    font-size: 1.2em;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    grid-template-rows: 75px 25px 25px;
+    grid-template-columns: auto;
+    margin-top: 0;
+}
+
+#bottom-teacozy h2 {
+    display: grid;
+    grid-row-start: 1;
+    justify-self: center;
+    align-items: start;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+#contact-info h5 {
+    display: grid;
+    justify-content: center;
+    grid-row-start: 2 span 3;
+    grid-row-gap: 15px;
+    align-content: center;
+}
+
+#copyright h5 {
+    display: grid;
+    justify-content: left;
+    grid-template-rows: auto;
+    margin-left: 20px;
+}
